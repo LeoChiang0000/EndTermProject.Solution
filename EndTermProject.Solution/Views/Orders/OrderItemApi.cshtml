@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "OrderItem";
+}
+
+<div class="Container" style="margin: 20px 80px">
+    <div class="row mb-3" style="border: 1px solid rgb(234, 234, 234)">
+        <!-- <table class="table table-bordered" style="margin:0px"> -->
+        <table class="table table-bordered mb-0">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6" id="first">
+                             
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div style="background-color: rgb(219, 219, 219);height: 100%;padding: 10px;">
+                                        <div style="margin-bottom: 5px">收件人資訊</div>
+                                        <ul style="list-style: none">
+                                           
+                                        </ul>
+                                        <hr />
+                                        <div style="margin-top: 10px">
+                                            <p>通知出貨後約 1 - 2 天寄達 | 提供追蹤</p>
+                                        </div>
+                                        <div style="margin-top: 10px">
+                                            <p>發票/收據開立後將寄至購買人地址</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- </table> -->
+    </div>
+    <div class="text-end">
+        <a href="@Url.Action("Index", "Orders")" class="btn btn-primary">上一頁</a>
+    </div>
+</div>
+<script src="~/js/Apitest.js"></script>

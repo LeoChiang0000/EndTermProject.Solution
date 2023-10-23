@@ -1,0 +1,94 @@
+﻿@model IEnumerable<EndTermProjectBack.Models.EFModels.TextCarousel>
+
+@{
+    ViewBag.Title = "Home Page";
+    var bannerCarousel = ViewBag.banner as IEnumerable<EndTermProjectBack.Models.EFModels.BannerCarousel>;
+    var bannerCarouselcount = ViewBag.count;
+}
+
+
+<main>
+    <div class="container">
+        @*消息輪播 begin*@
+        <div id="carouselExampleControls"
+             class="carousel slide"
+             data-bs-ride="carousel"
+             style="font-size:25px">
+            <div class="carousel-inner">
+                @foreach (var item in Model)
+                {
+                    if (item.Enabled == true)
+                    {
+                        <div class="carousel-item active data-bs-interval=1 indexTopColor">
+                            <a class="d-block indexTop"> @Html.DisplayFor(modelItem => item.Description)</a>
+                        </div>
+                    }
+                }
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        @*消息輪播 end*@
+    <br />
+
+        @*輪播 begin*@
+        <div id="carouselExampleCaptions"
+             class="carousel slide"
+             data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                @for (int i = 0, index = 0; i < bannerCarouselcount; i++)
+                {
+                    var item = bannerCarousel.ElementAt(i);
+                    if (item.Enabled == true)
+                    {
+                        <button type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="@index"
+                                @(index == 0 ? "class=active" : "")></button>
+                        index++;
+                    }
+                }
+            </div>
+
+            <div class="carousel-inner">
+
+                @foreach (var item in bannerCarousel)
+                {
+                    if (item.Enabled == true)
+                    {
+                        <div class="carousel-item active data-bs-interval=1">
+                            <img src="/Images/Carousel/@item.Image" class="d-block w-100" alt="顯示異常" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.Headline</h5>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        @*輪播 end*@
+    </div>>
+</main>
