@@ -24,5 +24,10 @@
 <br />
 
 訂單:
-![image]()
+<br />
+*會員點選"我的訂單"後，可以查看訂單明細。
+![image](https://github.com/LeoChiang0000/EndTermProject.Solution/blob/master/pictures/Order.png)
+<br />
+
+## 後台
 
