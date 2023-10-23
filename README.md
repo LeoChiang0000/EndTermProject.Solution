@@ -30,5 +30,17 @@
 <br />
 
 ## 後台:
+<br />
+訂單:
+<br />
+*員工可以透過顧客姓名、電話、電子郵件、日期等做篩選。
+<br />
+*點擊顯示明細可以看到此筆顧客訂單的明細。
+<br />
+*員工也可以根據貨物狀態去做調整。
+<br />
+![image](https://github.com/LeoChiang0000/EndTermProject.Solution/blob/master/pictures/Backend01.png)
+<br />
+![image](https://github.com/LeoChiang0000/EndTermProject.Solution/blob/master/pictures/Backend02.png)
 
 
