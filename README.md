@@ -40,5 +40,11 @@
 ![image](https://github.com/LeoChiang0000/EndTermProject.Solution/blob/master/pictures/Backend01.png)
 ![image](https://github.com/LeoChiang0000/EndTermProject.Solution/blob/master/pictures/Backend02.png)
 
+<br />
+## 測試用帳號
+*Account: allen
+<br />
+*Password: allen
+
 
 
