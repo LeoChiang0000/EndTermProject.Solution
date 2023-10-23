@@ -41,6 +41,6 @@
 <br />
 ![image](https://github.com/LeoChiang0000/EndTermProject.Solution/blob/master/pictures/Backend01.png)
 <br />
-![image](https://github.com/LeoChiang0000/EndTermProject.Solution/blob/master/pictures/Backend02.png)
+
 
 
