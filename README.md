@@ -39,9 +39,9 @@
 *員工也可以根據貨物狀態去做調整。
 ![image](https://github.com/LeoChiang0000/EndTermProject.Solution/blob/master/pictures/Backend01.png)
 ![image](https://github.com/LeoChiang0000/EndTermProject.Solution/blob/master/pictures/Backend02.png)
-
 <br />
-## 測試用帳號
+
+## 測試用帳號:
 <br />
 *Account: allen
 <br />
