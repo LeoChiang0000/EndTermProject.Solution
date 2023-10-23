@@ -39,6 +39,7 @@
 <br />
 *員工也可以根據貨物狀態去做調整。
 <br />
+<br />
 ![image](https://github.com/LeoChiang0000/EndTermProject.Solution/blob/master/pictures/Backend01.png)
 <br />
 
